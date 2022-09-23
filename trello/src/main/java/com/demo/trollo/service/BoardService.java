@@ -6,13 +6,10 @@ import com.demo.trollo.entity.Board;
 import com.demo.trollo.mappers.Mapper;
 import com.demo.trollo.repository.BoardRepository;
 import lombok.AllArgsConstructor;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-import org.springframework.web.server.ResponseStatusException;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @AllArgsConstructor
 @Service

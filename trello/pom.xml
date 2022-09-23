@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.demo</groupId>
-	<artifactId>trollo</artifactId>
+	<artifactId>trello-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>trollo</name>
-	<description>Demo project for Spring Boot</description>
+	<name>trello-backend</name>
+	<description>Trello backend</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
