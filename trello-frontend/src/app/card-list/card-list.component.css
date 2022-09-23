@@ -1,0 +1,21 @@
+.cardList {
+  background-color: lightgrey;
+  padding: 12px;
+  margin-right: 8px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  font-family: Ubuntu;
+}
+
+.cardList > p {
+  font-weight: 500;
+  margin: 4px 0 8px 0;
+}
+
+.topDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

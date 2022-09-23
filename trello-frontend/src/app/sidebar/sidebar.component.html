@@ -1,0 +1,25 @@
+<div class="sidebar">
+<div class="topDiv">
+  <p>Your boards</p>
+  <img src="../../assets/icons/plus.svg" (click)="onShowInput()">
+</div>
+
+<input *ngIf="showInput" #input type="text" [(ngModel)]="addBoardName">
+
+<div *ngIf="showInput" class="editList">
+  <button (click)="onAddBoard()">
+    Add
+  </button>
+  <button  (click)="onCancel()" >
+    Cancel
+  </button>
+</div>
+
+  <div *ngFor="let b of boards; let i = index" (click)="onSelectBoard(i, b.name)"  [ngStyle]="{'background-color': (currentIndex!=i) ? 'transparent' : '#ffffff', opacity : 0.4}" class="item">
+    <p [ngStyle]="{'color': (currentIndex!=i) ? 'white' : 'black'}" >
+      {{b.name}}
+    </p>
+    <img src="../../assets/icons/x.svg"  (click)="onDeleteBoard(i)">
+  </div>
+
+</div>

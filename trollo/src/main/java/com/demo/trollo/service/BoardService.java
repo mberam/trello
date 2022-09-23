@@ -20,7 +20,6 @@ public class BoardService {
 
     private BoardRepository boardRepository;
 
-
     public List<BoardDto> getAll() {
         List<Board> boards = boardRepository.findAll();
         List<BoardDto> dtos = new ArrayList<>();
@@ -30,11 +29,21 @@ public class BoardService {
         return dtos;
     }
 
-
     public BoardDto updateBoard(BoardDto dto) {
         Board board = Mapper.mapToBoard(dto);
         Board newBoard = boardRepository.save(board);
         return Mapper.mapToBoardDto(newBoard);
     }
+
+    public BoardDto addBoard(String boardName) {
+        Board board = new Board(null,boardName,new ArrayList<>());
+        Board newBoard = boardRepository.save(board);
+        return Mapper.mapToBoardDto(newBoard);
+    }
+
+    public void deleteBoard(Long boardId) {
+        boardRepository.deleteById(boardId);
+    }
+
 
 }

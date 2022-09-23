@@ -1,0 +1,18 @@
+<div class="addCArd">
+
+  <span *ngIf="!showInput" (click)="onShowEdit()" >
+      + Add another card
+  </span>
+
+  <input *ngIf="showInput" #input type="text" [(ngModel)]="cardName">
+
+  <div *ngIf="showInput" class="editList">
+    <button (click)="onAddCard()">
+      Add
+    </button>
+    <button  (click)="onCancel()" >
+      Cancel
+    </button>
+  </div>
+
+</div>

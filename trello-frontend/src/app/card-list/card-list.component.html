@@ -1,0 +1,14 @@
+
+
+<div class="cardList">
+  <div class="topDiv">
+    <p>{{cardList.name}}</p>
+    <img src="../../assets/icons/x.svg"  (click)="onDeleteCardList()">
+  </div>
+  <div *ngFor="let card of cardList.cards">
+    <app-card [card]="card" [cardListId]="cardList.id"></app-card>
+  </div>
+  <app-add-card [listId]="cardList.id"></app-add-card>
+</div>
+
+

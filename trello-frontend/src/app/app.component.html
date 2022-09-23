@@ -1,0 +1,12 @@
+
+
+
+<div class="app">
+  <app-header></app-header>
+  <app-sidebar [boards]="boards" [currentIndex]="index"></app-sidebar>
+  <app-board *ngIf="boards.length != 0" [board]="boards[index]"></app-board>
+</div>
+
+
+
+

@@ -24,7 +24,7 @@ public class Mapper {
             List<Card> cards = new ArrayList<>();
 
             for (CardDto cdto : ldto.getCards()) {
-                cards.add(new Card(cdto.getId(), cdto.getName(), cdto.getDescription()));
+                cards.add(new Card(cdto.getId(), newList, cdto.getName(), cdto.getDescription()));
             }
             newList.setCards(cards);
 
@@ -46,7 +46,7 @@ public class Mapper {
             newDtoList.setId(cl.getId());
             List<CardDto> cardDtos = new ArrayList<>();
             for (Card c : cl.getCards()) {
-                cardDtos.add(new CardDto(c.getId(),c.getName(), c.getDescription()));
+                cardDtos.add(new CardDto(c.getId(), c.getName(), c.getDescription()));
             }
             newDtoList.setCards(cardDtos);
             lists.add(newDtoList);

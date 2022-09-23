@@ -1,0 +1,31 @@
+INSERT INTO "PUBLIC"."BOARD" VALUES
+(1, 'Mihovil'),
+(10, 'Beram');
+
+INSERT INTO "PUBLIC"."CARD_LIST" VALUES
+(2, 'ToDo'),
+(5, 'Doing'),
+(8, 'Done'),
+(11, 'Miho');
+
+INSERT INTO "PUBLIC"."BOARD_CARD_LISTS" VALUES
+(1, 2),
+(1, 5),
+(1, 8),
+(10, 11);
+
+INSERT INTO "PUBLIC"."CARD" VALUES
+(3, 'shopping', 'card1'),
+(4, 'dry cleaning', 'card2'),
+(6, 'walking a dog', 'card3'),
+(7, 'buy groceries', 'card4'),
+(9, 'gym training', 'card5'),
+(12, 'cycling', 'card6');
+
+INSERT INTO "PUBLIC"."CARD_LIST_CARDS" VALUES
+(2, 3),
+(2, 4),
+(5, 6),
+(5, 7),
+(8, 9),
+(11, 12);

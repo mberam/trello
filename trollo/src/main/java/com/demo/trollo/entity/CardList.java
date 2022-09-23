@@ -14,11 +14,14 @@ import java.util.List;
 public class CardList {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Board board;
+
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "cardList")
     private List<Card> cards;
 }

@@ -18,6 +18,6 @@ public class Board {
 
     private String name;
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "board")
     private List<CardList> cardLists;
 }

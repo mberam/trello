@@ -1,0 +1,13 @@
+
+<p>
+  Board name : {{board.name}}
+</p>
+<div class="board">
+  <div *ngFor="let cardList of board.list" >
+    <app-card-list [cardList]="cardList"></app-card-list>
+  </div>
+  <app-add-list [boardId]="board.id"></app-add-list>
+</div>
+
+
+
