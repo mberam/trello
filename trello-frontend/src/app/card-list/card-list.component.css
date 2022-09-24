@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   font-family: Ubuntu;
+  width: 250px;
 }
 
 .cardList > p {
@@ -18,4 +19,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  font-weight: 600;
+}
+
+img {
+  cursor: pointer;
 }

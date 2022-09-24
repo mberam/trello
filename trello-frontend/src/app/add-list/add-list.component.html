@@ -4,15 +4,17 @@
       + Add another list
   </span>
 
-  <input *ngIf="showInput" #input type="text" [(ngModel)]="cardListName">
-
+  <form>
+  <input placeholder="List name" *ngIf="showInput" #input type="text" [(ngModel)]="cardListName" name="list">
   <div *ngIf="showInput" class="editList">
     <button (click)="onAddCardList()">
       Add
     </button>
-    <button  (click)="onCancel()" >
+    <button (click)="onCancel()" >
       Cancel
     </button>
   </div>
+</form>
+ 
 
 </div>

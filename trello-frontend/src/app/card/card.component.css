@@ -1,11 +1,17 @@
 .card {
   border: 1px solid gray;
-  width: 250px;
-  padding: 6px 8px 2px;
+  width: 100%;
+  padding: 4px 8px;
   border-radius: 3px;
   box-shadow: var(--ds-shadow-raised,0 1px 0 #091e4240);
   margin-bottom: 8px;
   background-color: white;
+  box-sizing: border-box;
+}
+
+.card:hover {
+  background-color: rgb(114, 173, 250);
+  opacity: 0.8;
 }
 
 .card > p {
@@ -15,22 +21,15 @@
   margin: 0 0 4px;
 }
 
-.card > button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 8px;
-  }
-
   .topDiv {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  img {
+    cursor: pointer;
   }
 
 

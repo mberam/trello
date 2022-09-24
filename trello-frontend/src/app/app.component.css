@@ -1,15 +1,8 @@
 .app {
-  background-image: url("https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2400x1600/71744f6ddf6246aad9154c966c68713d/photo-1663138763894-0cc4a5421dab.jpg");
-  width: 100vw;
+  background-color: #0087d3;
+  width: 100%;
   height: 100vh;
+  overflow: auto;
 }
 
-:host {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
+

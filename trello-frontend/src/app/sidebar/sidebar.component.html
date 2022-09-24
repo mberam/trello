@@ -4,18 +4,19 @@
   <img src="../../assets/icons/plus.svg" (click)="onShowInput()">
 </div>
 
-<input *ngIf="showInput" #input type="text" [(ngModel)]="addBoardName">
-
-<div *ngIf="showInput" class="editList">
-  <button (click)="onAddBoard()">
-    Add
-  </button>
-  <button  (click)="onCancel()" >
-    Cancel
-  </button>
+<div class="addBoardContainer" *ngIf="showInput">
+  <input placeholder="Board name" #input type="text" [(ngModel)]="addBoardName">
+  <div class="editList">
+    <button (click)="onAddBoard()">
+      Add
+    </button>
+    <button  (click)="onCancel()" >
+      Cancel
+    </button>
+  </div>
 </div>
 
-  <div *ngFor="let b of boards; let i = index" (click)="onSelectBoard(i, b.name)"  [ngStyle]="{'background-color': (currentIndex!=i) ? 'transparent' : '#ffffff', opacity : 0.4}" class="item">
+  <div *ngFor="let b of boards; let i = index" (click)="onSelectBoard(i, b.name)"  [ngStyle]="{'background-color': (currentIndex!=i) ? 'transparent' : '#ffffff'}" class="item">
     <p [ngStyle]="{'color': (currentIndex!=i) ? 'white' : 'black'}" >
       {{b.name}}
     </p>

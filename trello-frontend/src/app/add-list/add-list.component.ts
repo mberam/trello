@@ -40,6 +40,8 @@ export class AddListComponent implements OnInit {
         );
       }
     );
+    this.showInput = false;
+    this.cardListName = '';
   }
 
 }

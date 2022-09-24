@@ -47,6 +47,7 @@ export class SidebarComponent implements OnInit {
           this.boardService.setBoards(boards);
           this.addBoardName = '';
           this.showInput = false;
+          this.boardService.setIndex(boards.length-1);
         }
       )
     );

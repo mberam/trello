@@ -11,6 +11,7 @@ import { AddListComponent } from './add-list/add-list.component';
 import {FormsModule} from "@angular/forms";
 import {AddCardComponent} from "./add-card/add-card.component";
 import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { RouterModule } from '@angular/router';
         HttpClientModule,
         FormsModule,
         RouterModule,
+        CommonModule
         
     ],
   providers: [],

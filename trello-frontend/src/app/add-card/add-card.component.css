@@ -1,7 +1,5 @@
 .addCard{
-  width: 200px;
-  color: white;
-  padding: 16px;
+  width: 100%;
   border-radius: 4px;
   font-family: Ubuntu;
   font-size: 14px;
@@ -22,19 +20,35 @@
 
 input {
   background-color: white;
-  border: 0;
   outline: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
   width:100%;
   cursor:default;
-  height: 25px;
+  height: 32px;
   border-radius: 4px;
-  padding-left: 5px;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid darkgrey;
 }
 
 button {
-  padding: 5px;
+  background-color: #0066a0;
+  border: 0;
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+  width: 72px;
   margin-right: 8px;
+  cursor: pointer;
+}
+
+span {
+  cursor: pointer;
+  padding: 16px;
+}
+
+.addAnotherCard {
+  width: 100%;
 }

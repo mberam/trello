@@ -1,8 +1,4 @@
 .board {
-  position: absolute;
   display: flex;
-  top: 40px;
-  left: 220px;
-  padding: 10px;
-  flex-direction: row;
+  padding: 64px 48px 16px 216px;
 }
